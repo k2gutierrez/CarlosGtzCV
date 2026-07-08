@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <h1>👨‍💻 Interactive Developer CV</h1>
+  <p><b>A modern, responsive portfolio and resume layer built with Next.js 16 and Tailwind CSS v4</b></p>
+</div>
 
-## Getting Started
+## 📖 About the Project
 
-First, run the development server:
+The **Interactive Developer CV** is a production-ready frontend application designed to elegantly present professional experience, technical stacks, and blockchain engineering credentials. Built with the latest **Next.js** framework, it serves as a high-performance, statically optimized digital resume tailored to engage recruiters and technical hiring managers.
 
-```bash
+This architecture drops traditional, static PDF resumes in favor of an immersive, dark-themed UI with ambient gradients, responsive grid layouts, and seamless typography, demonstrating frontend proficiency alongside Web3 backend skills.
+
+**Key Technical Highlights:**
+* **Next.js 16.2 & React 19:** Leveraging the latest bleeding-edge React features and Next.js App Router for optimal rendering and fast load times.
+* **Tailwind CSS v4:** Utilizing utility-first CSS for highly maintainable, complex responsive designs, custom glow effects, and precision layout control.
+* **Lucide React & React Icons:** Optimized SVG iconography to enhance visual hierarchy without heavy asset payloads.
+* **Geist Font Integration:** Vercel's highly optimized font family for pristine, developer-centric typography.
+
+---
+
+## ⚙️ How It Works
+
+The application operates as a unified Single Page Application (SPA) driven by a main `page.tsx` component. It divides the user's professional profile into distinct, easily scannable sections: Header (Contact/Socials), Profile Summary, Tech Stack (Web3 & Frontend separated), Experience Timeline, Education, and Certifications.
+
+The UI leverages CSS variables and Tailwind's arbitrary values to create deep contrast, utilizing a primary dark palette (`#0a0a0a`) accented by Web3-themed neon gradients (purple, cyan, and blue).
+
+[app/page.tsx](./src/app/page.tsx) - Main UI Component & Layout
+
+---
+
+## 💻 Technical Docs
+
+The primary entry point of the application is the `ResumePage` default export. It is structured using semantic HTML5 tags (`<main>`, `<header>`, `<section>`) to ensure accessibility and SEO compliance. 
+
+🚀 Execution Example
+Here is a step-by-step example of how a technical recruiter interacts with the Interactive CV.
+
+Step 1: Landing & First Impression
+The recruiter opens the hosted URL. The page instantly loads (optimized by Next.js) displaying a sleek, dark-themed card. A top gradient border (purple to cyan) immediately signals a modern Web3 aesthetic.
+
+Step 2: Contact & Social Verification
+At the top, the recruiter finds clickable icons for GitHub and LinkedIn. Hovering over them triggers subtle background transitions, indicating a polished, interactive UI.
+
+Step 3: Technical Scanning
+Scrolling down, the recruiter checks the "Tech Stack" section. The use of a grid separates "Web3 & Blockchain" from "Frontend & Backend", allowing them to quickly verify key skills like Solidity, Foundry, Next.js, and ZKPs.
+
+Step 4: Experience Timeline Review
+The recruiter views the Experience section, built as a custom vertical timeline. Color-coded nodes (Purple for current, Blue for previous, Gray for older) guide the eye chronologically through roles from Production Manager to Full Stack Blockchain Developer.
+
+⬆️ Installation
+To run this project locally, ensure you have Node.js (v18+) installed.
+
+# Clone the repository
+git clone <your-repo-url>
+
+# Navigate into the directory
+cd cv-project
+
+# Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
